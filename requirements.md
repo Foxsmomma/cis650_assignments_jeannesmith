@@ -5,10 +5,10 @@ Overview:
 4. Make sure the student ids in the advising csv file match student ids in the students.csv file.
 5. The user interface will use the class definitions to instantiate a the list of students and advising schedule objects. 
 6. The UI will implement functionalities for actions such as 
-  1 edit student record, 
-  2. list students, 
-  3. eddit schedule record, 
-  4. update schedule record, and 
-  5. add schedule record
+    1 edit student record, 
+    2. list students, 
+    3. eddit schedule record, 
+    4. update schedule record, and 
+    5. add schedule record
 7. The system should also, save the data to the csv files. 
 

@@ -1,2 +1,3 @@
 # cis650_assignments
-This is the main github repo branch
+The requirements for the web assignment are shown in the .py files
+

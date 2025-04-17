@@ -39,8 +39,26 @@ def load_catalog():
 # return the list
 def get_items(catalog):
     items = []
-    # Your code goes here
+    for _ in range(3):
+        new_item = {}
+        while True:
+            try:
+                item_number = int(input("Enter item number [101 to 120]: "))
+                selected_item = catalog[item_number]
+            except KeyError:
+                print('Invalid item number. Please try again')
+            else:
+                break
+        new_item['item_number'] = item_number
+        new_item['name'] = selected_item['name']
+        new_item['category'] = selected_item['category']
+        new_item['quantity'] = int(input(f"Enter quantity of {selected_item['name']}: "))
+        new_item['price']= selected_item['price']
+        new_item['extended_price'] = new_item['quantity']* new_item['price']
+        items.append(new_item)
     return items
+
+
 # Commit your code.  Write the commit message here....
 # 
 
@@ -50,8 +68,22 @@ def get_items(catalog):
 # The returned list will be the item, and a new key value pair to each item 
 #  that will hold the discount, and discounted amount
 def bogo_deal(items, catalog, bogo_categories):
-    # Write your code here
-    return items
+        # Write your code here
+        for bogo_category in bogo_categories:
+            for selected_item in items:
+                print(selected_item)
+                if selected_item['category'] == bogo_category:
+                    if selected_item['quantity'] >= 2:
+                        free_items = selected_item['quantity']//2
+                        selected_item['discount'] = free_items * selected_item['price']
+                        selected_item['discounted_amount'] = selected_item['price'] * (selected_item['quantity']-free_items)
+                    else:
+                        selected_item['discount'] = 0
+                        selected_item['discounted_amount'] = selected_item['extended_price']
+                else:
+                    selected_item['discount'] = 0
+                    selected_item['discounted_amount'] = selected_item['extended_price']
+        return items
 
 # Commit your code.  Write the commit message here....
 # 
@@ -65,6 +97,14 @@ def bogo_deal(items, catalog, bogo_categories):
 # as input, and updates the discounted price.
 def coupon_sale(items, catalog, coupons):
     # write your code here
+    for selected_item in items:
+        slected_item_number = selected_item['item_number']
+        if coupons[slected_item_number]:
+            if coupons[slected_item_number]['discount'] == 'price':
+                
+
+
+
     return items
 
 # Commit your code.  Write the commit message here....
@@ -90,16 +130,19 @@ def print_bill(items):
 def main():
     catalog = load_catalog()
     items = get_items(catalog)
+    print(items)
     bogo_categories = ['Paper']
     items = bogo_deal(items, catalog, bogo_categories)
-    coupons = [{108: {"discount":"price", "amount":0.50}},
-               {110: {"discount":"percent", "amount":0.25}}]
+    print(items)
+    coupons = {108: {"discount":"price", "amount":0.50},
+               110: {"discount":"percent", "amount":0.25}}
     items = coupon_sale(items, catalog, coupons)
     print_bill(items)
 
 # Commit your code.  Write the commit message here....
 # 
 
+main()
 
 
 

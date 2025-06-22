@@ -57,3 +57,6 @@ face_emojis = [
 # the script will use the find method to search each name and then prints 
 # the name and emoji on screen.
 print(chr(0x1F600), end=' ')
+
+# After completing this script, git commit with 'after_03_all_emojis' as the message 
+# and git push the repo 

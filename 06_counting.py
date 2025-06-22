@@ -13,3 +13,5 @@ for c in words:
         d[c] = d[c] + 1
 print(d)
 #Modify this code so that punctuations are skipped
+# After completing this script, git commit with 'after_06_counting' as the message 
+# and git push the repo 

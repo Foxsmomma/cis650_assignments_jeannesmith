@@ -13,4 +13,5 @@ ice_cream_popularity = [
 # Write a script that shows a numbered list of the flavors, and asks the 
 # user for their preference.  The script will then print "You are among xx percentage
 # of people who like that yy flavor" .
-
+# After completing this script, git commit with 'after_05_icecream' as the message 
+# and git push the repo 

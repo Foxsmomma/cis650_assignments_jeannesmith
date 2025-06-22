@@ -5,4 +5,6 @@
 # Print is so that score is left aligned in a 10 character column
 # and the frequency is right aligned in a 5 character column
 
+# After completing this script, git commit with 'after_02_dice' as the message 
+# and git push the repo 
 

@@ -38,7 +38,7 @@ def frequent_ip(logs, many=3):
     # write your code here
     return frequents
 
-# Commit your code.  Write the commit message here....
+# Commit your code.  Write your commit message here....
 #
 
 # Task #2
@@ -50,7 +50,7 @@ def naviation(logs, ip_address, status='200'):
     # Write your code here
     return sequence
 
-# Commit your code.  Write the commit message here....
+# Commit your code.  Write your commit message here....
 #
 
 
@@ -71,7 +71,7 @@ def main():
             # do user's action
             pass
 
-# Commit your code.  Write the commit message here....
+# Commit your code.  Write your commit message here....
 #
 
 main()

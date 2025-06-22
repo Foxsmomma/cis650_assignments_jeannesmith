@@ -59,7 +59,7 @@ def get_items(catalog):
     return items
 
 
-# Commit your code.  Write the commit message here....
+# Commit your code.  Write your commit message here....
 # 
 
 # Task 2
@@ -85,7 +85,7 @@ def bogo_deal(items, catalog, bogo_categories):
                     selected_item['discounted_amount'] = selected_item['extended_price']
         return items
 
-# Commit your code.  Write the commit message here....
+# Commit your code.  Write your commit message here....
 # 
 
 # Task 3
@@ -107,7 +107,7 @@ def coupon_sale(items, catalog, coupons):
 
     return items
 
-# Commit your code.  Write the commit message here....
+# Commit your code.  Write your commit message here....
 # 
 
 # Task 3
@@ -119,7 +119,7 @@ def coupon_sale(items, catalog, coupons):
 def print_bill(items):
     # Write your code here
     return "Done"
-# Commit your code.  Write the commit message here....
+# Commit your code.  Write your commit message here....
 # 
 
 # Task 4
@@ -139,7 +139,7 @@ def main():
     items = coupon_sale(items, catalog, coupons)
     print_bill(items)
 
-# Commit your code.  Write the commit message here....
+# Commit your code.  Write your commit message here....
 # 
 
 main()

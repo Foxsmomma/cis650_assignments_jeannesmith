@@ -8,4 +8,6 @@
 # Do not use advanced topics including class, or lambda or comprehension 
 # or generators to complete this
 
+#git commit -m 'updated 04_tax_brackets' and then
+#git push
 

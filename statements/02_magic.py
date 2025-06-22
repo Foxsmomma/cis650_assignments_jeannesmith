@@ -23,3 +23,6 @@ question=  input('What do you want to know about the future?')
 r = random.randint(1, 9)
 fortune = getAnswer(r)
 print(fortune)
+
+#git commit -m 'updated 02_magic' and then
+#git push

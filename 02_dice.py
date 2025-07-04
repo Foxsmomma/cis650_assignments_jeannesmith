@@ -8,19 +8,18 @@
 # After completing this script, git commit with 'after_02_dice' as the message 
 # and git push the repo 
 import random
+def total_rolls (num_rolls):
+    resultcounts = []
+    for _ in range (num_rolls):
+        roll = random.randint(2,12)
+        resultcounts.append(roll)
+    return resultcounts
+        
+        
 
-def roll(numberofrolls):
-
-   TotalFrequencies ={i: 0 for i in range(2,12)}
-
-for _ in range (100):
-        dicerolls = random.randint(2,12)
-
-        return count
-        print(dicerolls)
-
-def final_frequencies
-
+def final_frequencies(frequencies):
+    for score, count in final_frequencies.items():
+      print(f"Sum of{score}:{count}")
 
 
 

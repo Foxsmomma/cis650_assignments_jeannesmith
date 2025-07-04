@@ -9,10 +9,9 @@
 # and git push the repo 
 import random
 
-dicerolls = [0,0,0,0,0]
-random.randint(2,12)
-for _ in range (100):
-    print(dicerolls)
+dicerolls = {random.randint(2,12)
+for _ in range (100)}
+print(dicerolls)
 
 
 

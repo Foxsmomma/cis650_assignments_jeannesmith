@@ -7,4 +7,31 @@
 
 # After completing this script, git commit with 'after_02_dice' as the message 
 # and git push the repo 
+import random
+
+dicerolls = [0,0,0,0,0]
+random.randint(2,12)
+for _ in range (100):
+    print(dicerolls)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -9,7 +9,10 @@
 # and git push the repo 
 import random
 
-dicerolls = {random.randint(2,12)
+def dicerolls(num_rolls):
+
+    frequencies ={i: 0 for i in range(2,12)}
+ = {random.randint(2,12)
 for _ in range (100)}
 print(dicerolls)
 

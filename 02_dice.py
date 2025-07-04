@@ -15,11 +15,15 @@ def total_rolls (num_rolls):
         resultcounts.append(roll)
 
     return resultcounts
-        
-    
-def final_frequencies (frequencies): 
-    for score, count in frequencies.items():
-        print(f"Sum of{score}:{count}")
+       
+def final_frequencies (resultcounts): 
+   print("{'Score':<10}{'Frequency':>5}")  
+   print("-" * 15)
+   for score in sorted(final_frequencies.keys()):
+    frequency = resultcounts[score]
+    print("{score:<10}{frequency:>5}")
+
+
 
 
 frequencies = total_rolls (100)

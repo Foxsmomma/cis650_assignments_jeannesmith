@@ -13,16 +13,18 @@ def total_rolls (num_rolls):
     for _ in range (num_rolls):
         roll = random.randint(2,12)
         resultcounts.append(roll)
+
     return resultcounts
         
-        
-
-def final_frequencies(frequencies):
-    for score, count in final_frequencies.items():
-      print(f"Sum of{score}:{count}")
-
+    
+def final_frequencies (frequencies): 
+    for score, count in frequencies.items():
+        print(f"Sum of{score}:{count}")
 
 
+frequencies = total_rolls (100)
+
+print(final_frequencies)
 
 
 

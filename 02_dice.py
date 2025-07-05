@@ -9,26 +9,25 @@
 # and git push the repo 
 import random
 def total_rolls (num_rolls):
-    resultcounts = []
+    resultcounts = {sum_val: 0 for sum_val in range(2, 12)}
     for _ in range (num_rolls):
         roll = random.randint(2,12)
         resultcounts.append(roll)
 
     return resultcounts
        
-def final_frequencies (resultcounts): 
-   print("{'Score':<10}{'Frequency':>5}")  
+def frequencies (resultcounts): 
+   print(f"{'Score':<10}{'Frequency':>5}")  
    print("-" * 15)
-   for score in sorted(final_frequencies.keys()):
+   for score in sorted(resultcounts.keys()):
     frequency = resultcounts[score]
     print("{score:<10}{frequency:>5}")
 
+num_rolls=100
 
+final_frequencies = total_rolls(num_rolls=100)
 
-
-frequencies = total_rolls (100)
-
-print(final_frequencies)
+frequencies(final_frequencies)
 
 
 

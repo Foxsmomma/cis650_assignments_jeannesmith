@@ -10,19 +10,20 @@
 import random
 def total_rolls (num_rolls):
     resultcounts = {}
-    for _ in range(num_rolls):
-        rollresult = random.randint(2,12)
-        resultcounts.append(rollresult)
+    for i in range(num_rolls):
+        roll = random.randint(2,12)
+        if roll ==1:
+            resultcounts.append(roll)
 
     return resultcounts
        
 def frequencies (frequencycount):
    print(f"{'Score':<10}{'Frequency':>5}")  
-   for score,count in frequencycount.items():
+   for score,frequency in frequencycount.items():
     print(f"Sum of {score:<10}{frequency:>5}")
 
 frequencycount= total_rolls (100)
-frequencies (frequencycount)
+frequencies(frequencycount)
 
 
 

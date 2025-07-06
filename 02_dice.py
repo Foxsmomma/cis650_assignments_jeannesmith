@@ -9,35 +9,35 @@
 # and git push the repo 
 
 
-
-
-
-
-
-
-
-
+# %%
 # %%
 # %%
 import random
 
 def total_rolls (num_rolls):
-    resultcounts = {}
-    i:0 for i in range(2,13)
-    roll = random.randint(2,13)
-    resultcounts [roll]+=1
-      
-    return resultcounts
-       
-def frequencies (frequencycount):
+   results = []
+   for i in range(num_rolls):
+      roll = random.randint(2,12)
+      results.append(roll)
+   return results
+
+def frequencies (rolls):
+   frequencyResults = {2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0,11:0,12:0}
+   for j in range(numRolls):
+      frequencyResults[rolls[j]] += 1
+   return frequencyResults
    
 
-   
+def printResults(rollResults):
+   print(f"{'Score':<10}{'Frequency': >5}")
+   for i in range(2,13):
+      print(f"{i:<10}{rollResults[i]: >5}")
 
-   print(f"{'Score':<10}{'Frequency':>5}")
-   for score,count in frequencycount.items():
-    print(f"{score:<10}{count:>5}")
+numRolls = 100
 
+rollResults = total_rolls(numRolls)
 
-frequencies(frequencycount)
+rollFrequencies = frequencies(rollResults)
+
+printResults(rollFrequencies)
 # %%

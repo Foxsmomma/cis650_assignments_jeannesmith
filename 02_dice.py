@@ -7,35 +7,37 @@
 
 # After completing this script, git commit with 'after_02_dice' as the message 
 # and git push the repo 
+
+
+
+
+
+
+
+
+
+
+# %%
+# %%
 import random
+
 def total_rolls (num_rolls):
     resultcounts = {}
-    for i in range(num_rolls):
-        roll = random.randint(2,12)
-        if roll ==1:
-            resultcounts.append(roll)
-
+    i:0 for i in range(2,13)
+    roll = random.randint(2,13)
+    resultcounts [roll]+=1
+      
     return resultcounts
        
 def frequencies (frequencycount):
-   print(f"{'Score':<10}{'Frequency':>5}")  
-   for score,frequency in frequencycount.items():
-    print(f"Sum of {score:<10}{frequency:>5}")
+   
 
-frequencycount= total_rolls (100)
+   
+
+   print(f"{'Score':<10}{'Frequency':>5}")
+   for score,count in frequencycount.items():
+    print(f"{score:<10}{count:>5}")
+
+
 frequencies(frequencycount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# %%

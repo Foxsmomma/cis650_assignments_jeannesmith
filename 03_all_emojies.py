@@ -1,5 +1,12 @@
 #Consider this list of emojis and their hexadecimal representations
-face_emojis = [
+
+# Write a script that will ask the user for a keyword
+# the script will use the find method to search each name and then prints 
+# the name and emoji on screen. print(chr(0x1F600), end=' ')
+
+# After completing this script, git commit with 'after_03_all_emojis' as the message 
+# and git push the repo #
+face_emojis= [
     {"name": "Grinning Face", "hex": "U+1F600"},
     {"name": "Beaming Face with Smiling Eyes", "hex": "U+1F601"},
     {"name": "Face with Tears of Joy", "hex": "U+1F602"},
@@ -51,12 +58,8 @@ face_emojis = [
     {"name": "Lying Face", "hex": "U+1F925"},
     {"name": "Overheated Face", "hex": "U+1F975"},
     {"name": "Cold Face", "hex": "U+1F976"},
-    {"name": "Exploding  Head", "hex": "U+1F92F"},
-]
-# Write a script that will ask the user for a keyword
-# the script will use the find method to search each name and then prints 
-# the name and emoji on screen.
-print(chr(0x1F600), end=' ')
+    {"name": "Exploding  Head", "hex": "U+1F92F"},]
 
-# After completing this script, git commit with 'after_03_all_emojis' as the message 
-# and git push the repo 
+userkeyword = input("Please enter a keyword: ")
+selected = next((i for i in face_emojis if i["name"] == userkeyword), None)
+print(selected.get("name")+chr(int(selected.get("hex")[2:], 16)), end =' ')

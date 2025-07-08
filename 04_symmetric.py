@@ -20,3 +20,15 @@ X         X
 # After completing this script, git commit with 'after_04_symmetric' as the message 
 # and git push the repo 
 
+letter = "X"
+box=1
+for i in range (box):
+    if i > box:
+      print(f"{letter:>1}" + " "*8+f"{letter:<1}")
+    print(f"{letter:>2}",' ' * 4,f"{letter:<2}")
+    print(f"{letter:>4}",' ' * 1,f"{letter:<4}")
+    print(f"{letter:>6}")
+for j in range (box):
+  print(f"{letter:>4}",' ' * 1,f"{letter:<4}")
+  print(f"{letter:>2}",' ' * 4,f"{letter:<2}")
+  print(f"{letter:>1}" + ' ' * 8+f"{letter:<1}")

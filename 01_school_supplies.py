@@ -39,7 +39,7 @@ def load_catalog():
 # return the list
 def get_items(catalog):
     items = []
-    for _ in range(3):
+    for _ in range(5):
         new_item = {}
         while True:
             try:
